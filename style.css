@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.box {
+    background-color: lightgrey;
+    height: 340px;
+    width: 300px;
+    float: left;
+    border: 1px solid black;
+    padding: 30px;
+    position: relative;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box .sale {
+    background-color: green;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box .like {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: red;
+    font-size: 60px;
+    display: none;
+    transform: translateX(-50%);
+}
+
+.box:hover .like {
+    display: block;
+}
